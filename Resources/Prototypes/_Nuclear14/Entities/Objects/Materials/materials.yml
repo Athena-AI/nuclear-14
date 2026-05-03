@@ -304,6 +304,14 @@
 
 - type: entity
   parent: N14MaterialLeather
+  id: N14MaterialLeather5
+  suffix: Five
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: N14MaterialLeather
   id: N14MaterialLeather1
   suffix: Single
   components:
@@ -487,6 +495,15 @@
 
 - type: entity
   parent: N14Scrap
+  id: N14Scrap5
+  name: scrap
+  suffix: Five
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: N14Scrap
   id: N14Scrap1
   name: scrap
   suffix: Single
@@ -525,6 +542,15 @@
 
 - type: entity
   parent: N14ScrapElectronic
+  id: N14ScrapElectronic5
+  name: electronic scrap
+  suffix: Five
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: N14ScrapElectronic
   id: N14ScrapElectronic1
   name: electronic scrap
   suffix: Single
@@ -560,6 +586,15 @@
   - type: Appearance
   - type: StaticPrice # Forge-Change
     price: 1 # PH
+
+- type: entity
+  parent: N14ScrapSteel
+  id: N14ScrapSteel5
+  name: steel scrap
+  suffix: Five
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   parent: N14ScrapSteel
@@ -627,6 +662,15 @@
 
 - type: entity
   parent: N14ScrapCopper
+  id: N14ScrapCopper5
+  name: copper scrap
+  suffix: Five
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: N14ScrapCopper
   id: N14ScrapCopper1
   name: copper scrap
   suffix: Single
@@ -656,6 +700,15 @@
   - type: Appearance
   - type: StaticPrice # Forge-Change
     price: 1 # PH
+
+- type: entity
+  parent: N14ScrapBrass
+  id: N14ScrapBrass5
+  name: brass scrap
+  suffix: Five
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   parent: N14ScrapBrass

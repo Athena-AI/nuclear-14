@@ -1,0 +1,10 @@
+- type: entity
+  id: FishingSpotIrradiatedWater
+  parent: N14FishingSpot
+  suffix: Irradiated Water
+  components:
+  - type: FishingSpot
+    fishList: !type:NestedSelector
+      tableId: IrradiatedWaterFishingLootTable
+    fishDefaultTimer: 25.0
+    fishTimerVariety: 15.0
