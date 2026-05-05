@@ -4608,3 +4608,14 @@ Entries:
   id: 5835
   time: '2026-05-05T21:32:44.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/430
+- author: Bradysgaming
+  changes:
+    - type: Add
+      message: Added the mask of greed.
+    - type: Add
+      message: Added base mask paths in mifits so they can be sorted properly
+    - type: Add
+      message: Added the helmet of peace
+  id: 5836
+  time: '2026-05-05T21:36:42.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/407
