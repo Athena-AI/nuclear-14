@@ -153,7 +153,7 @@
   id: SuperMutantRangerGear
   equipment:
     mask: ClothingSuperRangerGasmask
-    head: ClothingSuperMutantRangerHat
+    head: ClothingSuperMutantRangerHelmet
     jumpsuit: ClothingSuperMutantRangerShirt
     outerClothing: ClothingSuperMutantRangerArmor
     back: N14ClothingBackpackMilitary
@@ -239,7 +239,7 @@
   id: SuperMutantNCRRangerGear
   equipment:
     mask: ClothingSuperRangerGasmask
-    head: ClothingSuperMutantRangerHat
+    head: ClothingSuperMutantRangerHelmet
     shoes: ClothingSuperMutantGladiatorBoots # Placeholder untill we get NCR boots
     jumpsuit: ClothingSuperMutantRangerShirt
     outerClothing: ClothingSuperMutantRangerArmor
