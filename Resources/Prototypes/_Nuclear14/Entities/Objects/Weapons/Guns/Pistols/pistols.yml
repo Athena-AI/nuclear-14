@@ -725,7 +725,7 @@
 
 - type: entity
   name: That Gun
-  parent: N14WeaponRevolverBase
+  parent: N14BaseWeaponPistol
   id: N14WeaponPistolThatGun
   description: A bizarre-looking pistol modelled after a prop from a pre-war TV show, chambered in .223. Five rounds, semi-automatic, and oddly accurate. Whoever built this knew what they were doing.
   components:
@@ -747,7 +747,7 @@
     - 0,0,0,1
   - type: Gun
     fireRate: 2
-    minAngle: 0
+    minAngle: 1
     maxAngle: 6
     angleIncrease: 1
     angleDecay: 8
@@ -755,12 +755,12 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      collection: N14SniperVarmintGunshot
+      collection: N14RevolverMagnunGunshot
   - type: RevolverAmmoProvider
     whitelist:
       tags:
         - N14Cartridge556Rifle
     proto: N14Cartridge556Rifle
-    capacity: 5
+    capacity: 6
   - type: StaticPrice
     price: 350
