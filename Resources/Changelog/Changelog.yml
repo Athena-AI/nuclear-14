@@ -4738,3 +4738,10 @@ Entries:
   id: 5849
   time: '2026-05-10T01:32:39.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/453
+- author: Vixting
+  changes:
+    - type: Add
+      message: adds oxygen tanks to vault hazmat lockers
+  id: 5850
+  time: '2026-05-10T01:36:08.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/456
