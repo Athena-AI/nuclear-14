@@ -14,7 +14,7 @@
     range: 45
     volume: 1
   - type: UseDelay
-    delay: 3
+    delay: 5
 
 - type: entity
   parent: BaseWarhorn
@@ -32,6 +32,8 @@
     sound: /Audio/_Misfits/Items/Warhorn/WarHorn02.ogg
     range: 45
     volume: 1
+  - type: UseDelay
+    delay: 5
 
 - type: entity
   parent: BaseWarhorn
@@ -49,12 +51,14 @@
     sound: /Audio/_Misfits/Items/Warhorn/WarHorn01.ogg
     range: 45
     volume: 1
+  - type: UseDelay
+    delay: 5
 
 - type: entity
   parent: BaseWarhorn
   id: WarhornNCRBugle
   name: Bugle
-  description: Fine men of California, charge!
+  description: Fine soldiers of California, charge!
   components:
   - type: Sprite
     sprite: /Textures/_Misfits/Objects/Warhorns/ncrbugle.rsi
@@ -66,3 +70,5 @@
     sound: /Audio/_Misfits/Items/Warhorn/BugleCharge.ogg
     range: 45
     volume: 2
+  - type: UseDelay
+    delay: 5
