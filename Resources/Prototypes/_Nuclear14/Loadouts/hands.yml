@@ -109,3 +109,17 @@
       - Overseer
   items:
     - N14ClothingHandsGlovesNitrilePurple
+
+
+- type: loadout
+  id: N14GoliathFistCent
+  category: Hands
+  cost: 3
+  requirements:
+    - !type:CharacterJobRequirement
+      traits:
+      - CaesarLegionCenturion
+    - !type:CharacterItemGroupRequirement
+      group: N14LoadoutMelee
+  items:
+    - N14ClothingHandsPowerFistGoliath
