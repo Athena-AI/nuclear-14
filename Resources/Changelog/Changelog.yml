@@ -4917,3 +4917,25 @@ Entries:
   id: 5868
   time: '2026-05-12T15:07:29.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/490
+- author: Dpellowski
+  changes:
+    - type: Add
+      message: >-
+        Added Tribe, War and Raid systems (new FactionWar and RaidRequest
+        features), including server logic and client UI to start and manage
+        raids.
+    - type: Remove
+      message: >-
+        Removed legacy raid/faction hooks and deprecated compatibility code to
+        simplify the war flow.
+    - type: Tweak
+      message: >-
+        Adjusted raid request flow, faction war balancing, and localization for
+        Ug-Qualtoth content.
+    - type: Fix
+      message: >-
+        Fixed several sync/desync issues and server-side validation around raid
+        requests and faction war state.
+  id: 5869
+  time: '2026-05-12T23:54:36.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/492
