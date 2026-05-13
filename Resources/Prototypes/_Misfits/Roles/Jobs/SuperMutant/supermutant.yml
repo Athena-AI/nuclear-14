@@ -279,7 +279,10 @@
   spawnLoadout: true
   applyTraits: true
   startingGear: SuperMutantNCRTrooperGear
-  requirements:
+    access:
+  - NCR
+  - NCRSGT
+    requirements:
     - !type:CharacterSpeciesRequirement
       species:
         - SuperMutant
