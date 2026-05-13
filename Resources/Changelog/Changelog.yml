@@ -5001,3 +5001,10 @@ Entries:
   id: 5875
   time: '2026-05-13T02:34:26.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/496
+- author: pierow
+  changes:
+    - type: Fix
+      message: Adds armor values to SM NCR Trooper Helmet
+  id: 5876
+  time: '2026-05-13T02:39:20.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/500
