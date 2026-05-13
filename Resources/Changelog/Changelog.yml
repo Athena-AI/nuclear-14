@@ -5015,3 +5015,10 @@ Entries:
   id: 5877
   time: '2026-05-13T03:01:21.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/501
+- author: pierow
+  changes:
+    - type: Fix
+      message: Dogtag access to SM NCR Trooper
+  id: 5878
+  time: '2026-05-13T03:06:49.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/502
