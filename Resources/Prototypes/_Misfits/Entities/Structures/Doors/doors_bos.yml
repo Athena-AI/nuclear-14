@@ -9,16 +9,16 @@
   - type: Wires
     layoutId: HighSec
 
-  - type: entity
-    parent: HighSecDoor
-    id: MisfitsHighSecDoorLockedBoSMidwestKnight
-    suffix: BoSMidwest, Locked, Knight
-    components:
-    - type: ContainerFill
-      containers:
-        board: [ DoorElectronicsBOSMidwestKnight ]
-    - type: Wires
-      layoutId: HighSec
+- type: entity
+  parent: HighSecDoor
+  id: MisfitsHighSecDoorLockedBoSMidwestKnight
+  suffix: BoSMidwest, Locked, Knight
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBOSMidwestKnight ]
+  - type: Wires
+    layoutId: HighSec
 
 - type: entity
   parent: HighSecDoor

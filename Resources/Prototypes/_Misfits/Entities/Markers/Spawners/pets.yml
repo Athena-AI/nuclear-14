@@ -2,37 +2,60 @@
 
 - type: entity
   parent: MisfitsPetSpawnerBase
-  id: MisfitsPetSpawnerRabbitFollowersPet
+  id: MisfitsSpawnerRabbitFollowersPet
   name: dr. thumper rabbit pet followers spawner
   components:
   - type: GhostRole
-    name: ghost-role-information-n14pet-rabbit-followers-name
-    description: ghost-role-information-n14pet-generic-description
+    name: ghost-role-information-misfitpet-rabbit-followers-name
+    description: ghost-role-information-misfit-faction-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
     prototype: MisfitsMobRabbitFollowersPet
-
+  - type: Sprite
+    layers:
+    - state: green
+    - state: rabbit
+      sprite: _Nuclear14/Mobs/Animals/rabbit.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MisfitsMobRabbitFollowersPet
 
 - type: entity
   parent: MisfitsPetSpawnerBase
-  id: MisfitsPetMisfitsMobLizardBoSPet1
-  name: dr. thumper rabbit pet followers spawner
+  id: MisfitsSpawnerMobLizardBoSPet1
+  name: timmy bos pet spawner
   components:
   - type: GhostRole
     name: ghost-role-information-misfitpet-lizard1-bos-name
-    description: ghost-role-information-n14pet-generic-description
+    description: ghost-role-information-misfit-faction-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
     prototype: MisfitsMobLizardBoSPet1
+  - type: Sprite
+    layers:
+    - state: green
+    - state: lizard
+      sprite: Mobs/Animals/lizard.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MisfitsMobLizardBoSPet1
 
 - type: entity
   parent: MisfitsPetSpawnerBase
-  id: MisfitsPetMisfitsMobLizardBoSPet2
-  name: dr. thumper rabbit pet followers spawner
+  id: MisfitsSpawnerMobLizardBoSPet2
+  name: jimmy bos pet spawner
   components:
   - type: GhostRole
-    name: ghost-role-information-misfitpet-lizard1-bos-name
-    description: ghost-role-information-n14pet-generic-description
+    name: ghost-role-information-misfitpet-lizard2-bos-name
+    description: ghost-role-information-misfit-faction-description
     rules: ghost-role-component-default-rules
   - type: GhostRoleMobSpawner
     prototype: MisfitsMobLizardBoSPet2
+  - type: Sprite
+    layers:
+    - state: green
+    - state: lizard
+      sprite: Mobs/Animals/lizard.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MisfitsMobLizardBoSPet2

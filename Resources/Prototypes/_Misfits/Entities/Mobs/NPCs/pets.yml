@@ -33,12 +33,11 @@
     - Followers
     - SimpleMob
 
-
 - type: entity
   name: Timmy
   id: MisfitsMobLizardBoSPet1
   parent: MobLizard
-  description: Oddly, not a deathclaw. You have been lied to.
+  description: Oddly enough, not a deathclaw. You have been lied to.
   components:
   - type: MobThresholds
     thresholds:
@@ -53,7 +52,7 @@
     price: 200
 
 - type: entity
-  name: Timmy
+  name: Jimmy
   id: MisfitsMobLizardBoSPet2
   parent: MobLizard
   description: Seems very friendly!
