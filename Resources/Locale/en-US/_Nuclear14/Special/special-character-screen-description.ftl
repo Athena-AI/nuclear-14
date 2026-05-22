@@ -1,11 +1,11 @@
 # Description of Special labels in character creation screen
-special-character-creation-description-strength = Changes melee damage on a curved scale.
-special-character-creation-description-perception = Changes ranged handling on a curved scale.
-special-character-creation-description-endurance = Changes health on a curved scale.
-special-character-creation-description-charisma = Changes available loadout points on a curved scale.
-special-character-creation-description-intelligence = Changes crafting and surgery speed. At 1 Intelligence, crafting is disabled.
-special-character-creation-description-agility = Changes movement speed on a curved scale.
-special-character-creation-description-luck = Changes critical-hit and lucky scavenging chances on a curved scale.
+special-character-creation-description-strength = Increases melee damage.
+special-character-creation-description-perception = Improves ranged weapon handling.
+special-character-creation-description-endurance = Increases maximum health.
+special-character-creation-description-charisma = Gives more loadout points.
+special-character-creation-description-intelligence = Improves crafting and medical abilities.
+special-character-creation-description-agility = Increases movement speed.
+special-character-creation-description-luck = Improves critical hits and lucky scavenging.
 
 # Title of Special labels in character creation screen
 special-character-creation-strength = Strength

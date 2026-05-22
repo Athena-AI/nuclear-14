@@ -1,5 +1,6 @@
 using Content.Shared._Misfits.Special.Components;
 using Content.Shared._Misfits.Special.Prototypes;
+using Content.Shared.Chemistry;
 using Content.Shared.Movement.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -9,6 +10,7 @@ namespace Content.Shared._Misfits.Special;
 public sealed class SharedSpecialSystem : EntitySystem
 {
     private const string TuningPrototypeId = "MisfitsSpecialTuning";
+    private const int IntelligenceSolutionScanThreshold = 8;
 
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
@@ -24,6 +26,7 @@ public sealed class SharedSpecialSystem : EntitySystem
 
         SubscribeLocalEvent<SpecialComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<SpecialComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<SpecialComponent, SolutionScanEvent>(OnSolutionScan);
     }
 
     public override void Update(float frameTime)
@@ -52,6 +55,12 @@ public sealed class SharedSpecialSystem : EntitySystem
     private void OnShutdown(Entity<SpecialComponent> ent, ref ComponentShutdown args)
     {
         _temporaryModifiers.RemoveAll(entry => entry.Entity == ent.Owner);
+    }
+
+    private void OnSolutionScan(Entity<SpecialComponent> ent, ref SolutionScanEvent args)
+    {
+        if (GetEffective(ent.Owner, SpecialStat.Intelligence, ent.Comp) >= IntelligenceSolutionScanThreshold)
+            args.CanScan = true;
     }
 
     public SpecialTuningPrototype GetTuning()
