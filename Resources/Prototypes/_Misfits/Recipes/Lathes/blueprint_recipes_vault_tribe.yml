@@ -199,21 +199,6 @@
     Plastic: 500
 
 # --- Vault Tier 2 Armor ---
-- type: latheRecipe
-  id: M14BPVaultAdvancedVestArmorUpgrade
-  result: M14ClothingOuterVaultAdvancedVest
-  category: N14BlueprintVaultArmorT2
-  completetime: 8
-  requiresBlueprint: true
-  availableFaction:
-  - Vault
-  materials:
-    N14ClothingOuterVaultSecVest: 100
-    Cloth: 200
-    Thread: 100
-    Plastic: 250
-    N14Iron: 50
-    Leather: 250
 
 - type: latheRecipe
   id: M14BPVaultAdvancedVestArmor
@@ -224,7 +209,7 @@
   availableFaction:
   - Vault
   materials:
-    Cloth: 1500
+    Cloth: 900
     Thread: 600
     Plastic: 1000
     Steel: 1000
