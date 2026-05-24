@@ -5588,3 +5588,10 @@ Entries:
   id: 5935
   time: '2026-05-24T14:17:53.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/582
+- author: sssaaagggeee
+  changes:
+    - type: Add
+      message: NCR C-27 ranks and progression, going from E-5 -> E-6 -> E-8
+  id: 5936
+  time: '2026-05-24T14:18:19.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/581
