@@ -16,7 +16,10 @@ public sealed class SpecialPenaltySystem : EntitySystem
 
     private const int LowCharismaThreshold = 5;
     private const int LowIntelligenceThreshold = 2;
-    private const int ClumsyLuckThreshold = 3;
+    private const float ClumsyLuckOneChance = 0.50f;
+    private const float ClumsyLuckTwoChance = 0.05f;
+    private const float ClumsyLuckThreeChance = 0.03f;
+    private const float ClumsyLuckFourChance = 0.01f;
 
     public override void Initialize()
     {
@@ -59,8 +62,9 @@ public sealed class SpecialPenaltySystem : EntitySystem
         else
             ClearLowIntelligence(ent.Owner);
 
-        if (_special.GetEffective(ent.Owner, SpecialStat.Luck, ent.Comp) < ClumsyLuckThreshold)
-            ApplyLuckClumsy(ent.Owner);
+        var luck = _special.GetEffective(ent.Owner, SpecialStat.Luck, ent.Comp);
+        if (TryGetLuckClumsyChance(luck, out var clumsyChance))
+            ApplyLuckClumsy(ent.Owner, clumsyChance);
         else
             ClearLuckClumsy(ent.Owner);
     }
@@ -86,9 +90,32 @@ public sealed class SpecialPenaltySystem : EntitySystem
         RemComp<LowIntelligenceAccentComponent>(uid);
     }
 
-    private void ApplyLuckClumsy(EntityUid uid)
+    private static bool TryGetLuckClumsyChance(int luck, out float chance)
     {
-        EnsureComp<ClumsyComponent>(uid);
+        chance = luck switch
+        {
+            1 => ClumsyLuckOneChance,
+            2 => ClumsyLuckTwoChance,
+            3 => ClumsyLuckThreeChance,
+            4 => ClumsyLuckFourChance,
+            _ => 0f,
+        };
+
+        return chance > 0f;
+    }
+
+    private void ApplyLuckClumsy(EntityUid uid, float chance)
+    {
+        var hadClumsy = HasComp<ClumsyComponent>(uid);
+        var specialApplied = HasComp<SpecialAppliedClumsyComponent>(uid);
+
+        // Do not weaken or take ownership of clumsy from traits, species, or admin effects.
+        if (hadClumsy && !specialApplied)
+            return;
+
+        var clumsy = EnsureComp<ClumsyComponent>(uid);
+        clumsy.ClumsyDefaultCheck = chance;
+        Dirty(uid, clumsy);
         EnsureComp<SpecialAppliedClumsyComponent>(uid);
     }
 
