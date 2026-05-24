@@ -5648,3 +5648,10 @@ Entries:
   id: 5940
   time: '2026-05-24T22:04:23.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/589
+- author: HungryCuban
+  changes:
+    - type: Tweak
+      message: Plasma projectile damage changed from caustic to shock.
+  id: 5941
+  time: '2026-05-24T23:45:55.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/583
