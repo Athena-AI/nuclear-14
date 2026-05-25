@@ -5684,3 +5684,10 @@ Entries:
   id: 5944
   time: '2026-05-25T01:32:27.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/592
+- author: Bradysgaming
+  changes:
+    - type: Add
+      message: Added Radtoads.
+  id: 5945
+  time: '2026-05-25T03:06:37.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/593
