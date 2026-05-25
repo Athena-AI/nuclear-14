@@ -5668,3 +5668,12 @@ Entries:
   id: 5942
   time: '2026-05-25T01:20:14.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/591
+- author: Bradysgaming
+  changes:
+    - type: Add
+      message: Added aggro to the 80's jobs
+    - type: Fix
+      message: Fixed The Block Pants
+  id: 5943
+  time: '2026-05-25T01:22:53.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/590
