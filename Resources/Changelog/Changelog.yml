@@ -5817,3 +5817,14 @@ Entries:
   id: 5958
   time: '2026-05-26T16:41:51.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/609
+- author: Billy
+  changes:
+    - type: Tweak
+      message: 'small legion buffs '
+    - type: Tweak
+      message: more town guard slots billions must town
+    - type: Tweak
+      message: buffed bren to be a little more accurate.
+  id: 5959
+  time: '2026-05-26T16:43:07.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/600
